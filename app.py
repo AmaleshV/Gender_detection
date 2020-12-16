@@ -21,7 +21,7 @@ import pickle
 from transformers import ElectraTokenizer, TFElectraModel,ElectraConfig
 
 #from flask_ngrok import run_with_ngrok
-from healthcheck import HealthCheck
+#from healthcheck import HealthCheck
 
 import logging
 
@@ -46,7 +46,7 @@ app = Flask(__name__)
 #                     format='%(asctime)s %(levelname)s %(name)s %(threadName)s : %(message)s')
 logging.info('Model and Vocabalory loaded.......')
 
-health = HealthCheck(app, "/hcheck")
+#health = HealthCheck(app, "/hcheck")
 
 
 def howami():
