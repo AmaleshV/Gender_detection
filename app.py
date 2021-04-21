@@ -17,8 +17,8 @@ import transformers
 from transformers import ElectraTokenizer, TFElectraModel,ElectraConfig
 
 #from flask_ngrok import run_with_ngrok
-
-
+import os
+os.environ['CUDA_VISIBLE_DEVICES'] = '-1'
 #import google.cloud.logging
 
 
