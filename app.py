@@ -3,8 +3,6 @@ from flask import Flask,request, url_for, redirect, render_template
 import numpy as np
 from flask import Flask, request, jsonify, render_template
 import pandas as pd
-
-from sklearn.model_selection import train_test_split
 import tensorflow as tf
 from transformers import TFBertModel,  BertConfig, BertTokenizerFast,BatchEncoding
 from tensorflow.keras.layers import Input, Dropout, Dense
@@ -16,7 +14,6 @@ from tensorflow.keras.losses import CategoricalCrossentropy
 from tensorflow.keras.metrics import CategoricalAccuracy
 from tensorflow.keras.utils import to_categorical
 import transformers
-import pickle
 from transformers import ElectraTokenizer, TFElectraModel,ElectraConfig
 
 #from flask_ngrok import run_with_ngrok
